@@ -1,6 +1,4 @@
-<h1 align="center">
-  A portfolio: Frankie Valentine
-</h1>
+# A portfolio: Frankie Valentine
 
 _Built with Gatsby, Contentful, and deployed using Now._
 
@@ -52,4 +50,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Now](https://zeit.co/now)
+[![Deploy to Now](https://assets.zeit.co/image/upload/front/assets/design/white-triangle.png)
