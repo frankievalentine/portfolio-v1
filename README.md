@@ -50,4 +50,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Now](https://assets.zeit.co/image/upload/front/assets/design/white-triangle.png)
+**Deploy to Now**
+<img src="https://assets.zeit.co/image/upload/front/assets/design/white-triangle.png" alt="Deploy To Now" width="600px" height="400px">
+
