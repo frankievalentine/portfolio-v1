@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { FirstLoad } from '../styles'
 import logo from '../images/logowht.png'
 
-class Loader extends Component {
+class Loading extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -31,4 +31,4 @@ class Loader extends Component {
   }
 }
 
-export default Loader
+export default Loading

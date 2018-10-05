@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
+// import { ThemeProvider } from 'styled-components'
 import 'normalize.css'
-import Loader from '../components/Loader'
-import Nav from '../components/Nav'
+import Loading from '../components/Loading'
+import Head from '../components/Head'
+import Hero from '../components/Hero'
 // import Home from '../components/Home'
 // import About from '../components/About'
 // import Personal from '../components/Personal'
 // import Footer from '../components/Footer'
 
 import GlobalStyle from '../styles/Global'
+// import { dayTheme, nightTheme } from '../styles'
 
 export default () => (
   <Fragment>
@@ -22,10 +25,7 @@ export default () => (
       <meta name="referrer" content="origin" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://valentinedev.com" />
-      <meta
-        property="og:title"
-        content="Frankie Valentine - ValentineDev"
-      />
+      <meta property="og:title" content="Frankie Valentine - ValentineDev" />
       <meta
         property="og:description"
         content="Personal portfolio of Frankie Valentine. Founder of V3 Digital Studio."
@@ -33,9 +33,10 @@ export default () => (
       <meta property="og:image" content="" />
     </Helmet>
     <GlobalStyle />
-    <Loader />
-    <Nav />
-    {/* <Home />
+    <Loading />
+    <Head />
+    <Hero />
+    {/*<Home />
     <About />
     <Personal />
     <Footer /> */}
