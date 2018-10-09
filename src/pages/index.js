@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 // import { ThemeProvider } from 'styled-components'
-import 'normalize.css'
 import Loading from '../components/Loading'
+import { Container } from '../styles'
 import Head from '../components/Head'
-import Hero from '../components/Hero'
-// import Home from '../components/Home'
-// import About from '../components/About'
-// import Personal from '../components/Personal'
-// import Footer from '../components/Footer'
+import Home from '../components/Home'
+import About from '../components/About'
+import Personal from '../components/Personal'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 import GlobalStyle from '../styles/Global'
 // import { dayTheme, nightTheme } from '../styles'
@@ -34,11 +34,13 @@ export default () => (
     </Helmet>
     <GlobalStyle />
     <Loading />
-    <Head />
-    <Hero />
-    {/*<Home />
-    <About />
-    <Personal />
-    <Footer /> */}
+    <Container>
+      <Head />
+      <Home />
+      <About />
+      <Personal />
+      <Contact />
+      <Footer />
+    </Container>
   </Fragment>
 )

@@ -29,36 +29,20 @@ export const FirstLoad = styled.div`
   }
 `
 
-// HEADER
-export const Header = styled.div`
-  position: fixed;
-  width: 100%;
-  padding: 50px 0;
-  z-index: 100;
-
-  &.HeaderScroll {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
-    backdrop-filter: blur(20px);
-  }
-`
-
-export const HeaderGroup = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+// CONTAINER
+export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  align-items: center;
-  justify-items: start;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: min-content 1fr repeat(3, minmax(min-content, 140px)) 1fr min-content;
 `
 
-export const Logo = styled.div`
-  > a {
-    height: 80px;
-    display: flex;
-    align-items: center;
-  }
+// HEADER
+export const MainHeader = styled.header`
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+
   img {
     width: 25px;
   }
@@ -70,7 +54,6 @@ export const Toggle = styled.label`
   margin-right: 40px;
   width: 48px;
   height: 30px;
-  justify-self: end;
 
   &:before {
     content: 'AM';
@@ -127,29 +110,158 @@ export const Toggle = styled.label`
   }
 `
 
-// HERO
-export const HeroSection = styled.section`
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  height: 35vh;
-`
-
-export const HeroContainer = styled.div`
-  margin: 0 auto;
+// HOME
+export const HomeDiv = styled.div`
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
 
   h1 {
-    font-size: 20px;
-    font-weight: 300
+    color: #525252;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
   }
 `
 
-// HERO IMG
+export const HomeNav = styled.nav`
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+`
+
+export const NavItem = styled.a`
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  position: relative;
+  margin: 5px;
+  color: #a6a6a6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    height: 2px;
+    width: 0;
+    background-color: #54ddc9;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: #54ddc9;
+    &:after {
+      opacity: 1;
+      left: 0;
+      width: 100%;
+    }
+  }
+`
+
+export const SectionH1 = styled.h1`
+  color: #525252;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+`
+
+export const SectionH2 = styled.h2`
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+`
+
+export const SectionLink = styled.a`
+  position: relative;
+  color: #525252;
+  font-weight: 600;
+  margin: 5px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -9px;
+    height: 2px;
+    width: 0;
+    background-color: #54ddc9;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: #54ddc9;
+    &:after {
+      opacity: 1;
+      left: 0;
+      width: 100%;
+    }
+  }
+`
 
 // ABOUT
+export const AboutSection = styled.section`
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+`
+
+export const AboutItem = styled.a`
+  display: block;
+  margin-top: 20px;
+  color: #525252;
+  font-size: 20px;
+  font-weight: 600;
+
+  &:before {
+    content: '';
+    position: relative;
+    height: 100%;
+    opacity: 0;
+    border: 2px solid;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: #54ddc9;
+    &:before {
+      opacity: 1;
+      margin-right: 10px;
+    }
+  }
+`
 
 // PERSONAL
+export const PersonalSection = styled.section`
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+`
+
+export const PersonalGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+`
 
 // CONTACT
+export const ContactSection = styled.section`
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+`
 
-// COPYRIGHT
+// FOOTER
+export const FooterSection = styled.footer`
+  grid-column: 4 / 5;
+  grid-row: 6 / 7;
+
+  span {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+  }
+`
