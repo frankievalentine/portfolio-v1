@@ -1,6 +1,6 @@
 import React from 'react'
 import me from '../images/me.jpg'
-import { HomeDiv, HomeNav, NavItem } from '../styles'
+import { HomeDiv, HomeNav, NavItem, HomeImg } from '../styles'
 
 const scroll = (e, section) => {
   e.preventDefault()
@@ -24,7 +24,7 @@ const Home = () => (
         Contact
       </NavItem>
     </HomeNav>
-    <img src={me} alt="Frankie Valentine portrait" style={{ width: '752px', height: '653px' }} />
+    <HomeImg src={me} alt="Frankie Valentine portrait" />
   </HomeDiv>
 )
 

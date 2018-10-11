@@ -29,14 +29,14 @@ const Personal = () => (
         <span>
           I am an active Unsplash contributor and I passed 1 million views!
           Mainly, my photography consists of product, overlay, and landscape. I
-          am by no means professional though.
+          am by no means a professional though.
         </span>
       </div>
       <div>
         <SectionH2>Writings</SectionH2>
         <span>
           You can find most of my writings on Medium. I enjoy contributing
-          personal peices containing my own opinions and tutorials that help
+          personal pieces containing my own opinions and tutorials that help
           other developers.
         </span>
       </div>

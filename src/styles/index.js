@@ -130,6 +130,21 @@ export const HomeNav = styled.nav`
   justify-content: center;
 `
 
+export const HomeImg = styled.img`
+  width: 752px;
+  height: 653px;
+
+  @media screen and (max-width: 775px) {
+    width: 450px;
+    height: 390px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 350px;
+    height: 303px;
+  }
+`
+
 export const NavItem = styled.a`
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
@@ -180,7 +195,7 @@ export const SectionLink = styled.a`
   position: relative;
   color: #525252;
   font-weight: 600;
-  margin: 5px;
+  margin-left: 5px;
 
   &:after {
     content: '';
@@ -245,6 +260,10 @@ export const PersonalGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
+  @media screen and (max-width: 775px) {
+    grid-gap: 10px;
+  }
 `
 
 // CONTACT
@@ -263,5 +282,9 @@ export const FooterSection = styled.footer`
     display: flex;
     justify-content: center;
     margin: 100px;
+
+    @media screen and (max-width: 775px) {
+      text-align: center;
+    }
   }
 `
