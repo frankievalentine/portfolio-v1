@@ -52,5 +52,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 **Deploy to Now**
 
+<a href="https://zeit.co/now">
 <img src="https://assets.zeit.co/image/upload/front/assets/design/white-triangle.png" alt="Deploy To Now" width="600px" height="400px">
+</a>
 

@@ -43,8 +43,16 @@ export const MainHeader = styled.header`
   justify-content: space-between;
   margin: 50px;
 
+  @media screen and (max-width: 500px) {
+    margin: 40px;
+  }
+
   img {
     width: 25px;
+
+    @media screen and (max-width: 500px) {
+      width: 20px;
+    }
   }
 `
 
@@ -62,6 +70,10 @@ export const Toggle = styled.label`
     top: 3px;
     font-size: 16px;
     font-weight: 600;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 
   &:after {
@@ -72,6 +84,10 @@ export const Toggle = styled.label`
     font-size: 16px;
     font-weight: 600;
     color: #749ed7;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
   }
 
   input {
@@ -195,7 +211,7 @@ export const SectionLink = styled.a`
   position: relative;
   color: #525252;
   font-weight: 600;
-  margin-left: 5px;
+  margin-left: 3px;
 
   &:after {
     content: '';
@@ -260,9 +276,10 @@ export const PersonalGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
 
-  @media screen and (max-width: 775px) {
-    grid-gap: 10px;
+  @media screen and (max-width: 500px) {
+    grid-gap: 15px;
   }
 `
 

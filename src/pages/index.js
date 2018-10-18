@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 import GlobalStyle from '../styles/Global'
 // import { dayTheme, nightTheme } from '../styles'
 
+
 export default () => (
   <Fragment>
     <Helmet>
