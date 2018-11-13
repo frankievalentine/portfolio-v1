@@ -1,6 +1,6 @@
 # A portfolio: Frankie Valentine
 
-_Built with Gatsby, Contentful, and deployed using Now._
+_Built with Gatsby, React, and deployed using Now._
 
 
 ## 🚀 Build your portfolio with Gatsby
