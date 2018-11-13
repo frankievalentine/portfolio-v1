@@ -1,17 +1,13 @@
-import React from 'react'
-import logo from '../images/logoblk.png'
-import { MainHeader, Toggle } from '../styles'
+// import React from 'react'
+// import logo from '../images/logoblk.png'
+// import { MainHeader} from '../styles'
 
-const Head = () => (
-      <MainHeader>
-        <a href="/">
-          <img src={logo} alt="ValentineDev logo" />
-        </a>
-        <Toggle>
-          <input type="checkbox" id="toggle" />
-          <span />
-        </Toggle>
-      </MainHeader>
-)
+// const Head = () => (
+//   <MainHeader>
+//     <a href="/">
+//       <img src={logo} alt="ValentineDev logo" />
+//     </a>
+//   </MainHeader>
+// )
 
-export default Head
+// export default Head

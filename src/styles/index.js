@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 import { LoadLogo } from './Animations'
 
-// export const dayTheme = {}
-
-// export const nightTheme = {}
-
 // LOADING SCREEN
 export const FirstLoad = styled.div`
   position: fixed;
@@ -37,94 +33,24 @@ export const Container = styled.div`
 `
 
 // HEADER
-export const MainHeader = styled.header`
-  grid-column: span 6;
-  display: flex;
-  justify-content: space-between;
-  margin: 50px;
+// export const MainHeader = styled.header`
+//   grid-column: span 6;
+//   display: flex;
+//   justify-content: space-between;
+//   margin: 50px;
 
-  @media screen and (max-width: 500px) {
-    margin: 40px;
-  }
+//   @media screen and (max-width: 500px) {
+//     margin: 40px;
+//   }
 
-  img {
-    width: 25px;
+//   img {
+//     width: 25px;
 
-    @media screen and (max-width: 500px) {
-      width: 20px;
-    }
-  }
-`
-
-export const Toggle = styled.label`
-  position: relative;
-  display: inline-block;
-  margin-right: 40px;
-  width: 48px;
-  height: 30px;
-
-  &:before {
-    content: 'AM';
-    position: absolute;
-    left: -35px;
-    top: 3px;
-    font-size: 16px;
-    font-weight: 600;
-
-    @media screen and (max-width: 500px) {
-      font-size: 14px;
-    }
-  }
-
-  &:after {
-    content: 'PM';
-    position: absolute;
-    right: -35px;
-    top: 3px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #749ed7;
-
-    @media screen and (max-width: 500px) {
-      font-size: 14px;
-    }
-  }
-
-  input {
-    display: none;
-  }
-
-  span {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffe250;
-    border-radius: 34px;
-
-    &:before {
-      position: absolute;
-      content: '';
-      height: 22px;
-      width: 22px;
-      left: 4px;
-      bottom: 4px;
-      border-radius: 34px;
-      background-color: white;
-      transition: all 0.4s;
-    }
-  }
-
-  input:checked + span:before {
-    transform: translateX(18px);
-  }
-
-  input:checked + span {
-    background-color: rgb(8, 35, 57);
-  }
-`
+//     @media screen and (max-width: 500px) {
+//       width: 20px;
+//     }
+//   }
+// `
 
 // HOME
 export const HomeDiv = styled.div`
@@ -199,12 +125,28 @@ export const SectionH1 = styled.h1`
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 775px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 22px;
+  }
 `
 
 export const SectionH2 = styled.h2`
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
+
+  @media screen and (max-width: 775px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
 `
 
 export const SectionLink = styled.a`
@@ -264,6 +206,14 @@ export const AboutItem = styled.a`
       margin-right: 10px;
     }
   }
+
+  @media screen and (max-width: 775px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
+  }
 `
 
 // PERSONAL
@@ -276,10 +226,10 @@ export const PersonalGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 15px;
 
   @media screen and (max-width: 500px) {
-    grid-gap: 15px;
+    grid-gap: 10px;
   }
 `
 

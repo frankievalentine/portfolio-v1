@@ -12,7 +12,7 @@ const scroll = (e, section) => {
 
 const Home = () => (
   <HomeDiv>
-    <h1>Frankie Valentine</h1>
+    <h1 style={{ 'padding-top': '90px' }}>Frankie Valentine</h1>
     <HomeNav>
       <NavItem href="#about" onClick={e => scroll(e, 'about')}>
         About

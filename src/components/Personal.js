@@ -16,7 +16,7 @@ const Personal = () => (
         <span>
           My personal design projects are on
           <SectionLink
-            href="https://dribbble.com/"
+            href="https://dribbble.com/frankievalentine"
             alt="Dribbble"
             rel="noopener noreferrer"
             target="_blank"
@@ -31,7 +31,7 @@ const Personal = () => (
         <span>
           Active personal code projects are always on
           <SectionLink
-            href="https://github.com/"
+            href="https://github.com/frankievalentine"
             alt="Github"
             rel="noopener noreferrer"
             target="_blank"
@@ -46,7 +46,7 @@ const Personal = () => (
         <span>
           I am an active contributor on
           <SectionLink
-            href="https://unsplash.com/"
+            href="https://unsplash.com/@frankievalentine"
             alt="Unsplash"
             rel="noopener noreferrer"
             target="_blank"
@@ -63,7 +63,7 @@ const Personal = () => (
         <span>
           You can find most of my writings on
           <SectionLink
-            href="https://medium.com/"
+            href="https://medium.com/@frankie.valentine"
             alt="Medium"
             rel="noopener noreferrer"
             target="_blank"

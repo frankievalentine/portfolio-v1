@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
-// import { ThemeProvider } from 'styled-components'
 import Loading from '../components/Loading'
 import { Container } from '../styles'
-import Head from '../components/Head'
+// import Head from '../components/Head'
 import Home from '../components/Home'
 import About from '../components/About'
 import Personal from '../components/Personal'
@@ -11,8 +10,6 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 import GlobalStyle from '../styles/Global'
-// import { dayTheme, nightTheme } from '../styles'
-
 
 export default () => (
   <Fragment>
@@ -35,13 +32,13 @@ export default () => (
     </Helmet>
     <GlobalStyle />
     <Loading />
-    <Container>
-      <Head />
-      <Home />
-      <About />
-      <Personal />
-      <Contact />
-      <Footer />
-    </Container>
+      <Container>
+        {/* <Head /> */}
+        <Home />
+        <About />
+        <Personal />
+        <Contact />
+        <Footer />
+      </Container>
   </Fragment>
 )

@@ -15,7 +15,7 @@ const About = () => (
         V3 Digital Studio
       </SectionLink>
       , write tutorials, stories, and share actively on Instagram. I specialize
-      in web based projects from scratch that are minimal, easy to use, and
+      in web based projects from scratch that are minimal, easy to use, performant, and
       built with efficiency in mind.
     </span>
     <AboutItem
