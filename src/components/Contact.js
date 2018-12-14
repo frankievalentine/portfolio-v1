@@ -16,7 +16,7 @@ const Contact = () => (
     <div>
       Check out my social feeds.{' '} &#8618;{' '}
       <SectionLink
-        href="https://www.instagram.com/frankie.v3/"
+        href="https://www.instagram.com/v3frankie/"
         alt="Instagram"
         rel="noopener noreferrer"
         target="_blank"

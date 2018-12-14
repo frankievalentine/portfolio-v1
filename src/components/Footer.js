@@ -4,7 +4,7 @@ import { FooterSection } from '../styles'
 const Footer = () => (
   <FooterSection>
     <span>
-      &copy; 2018 Frankie Valentine. All Rights Reserved.
+      &copy; 2019 Frankie Valentine. All Rights Reserved.
     </span>
   </FooterSection>
 )
