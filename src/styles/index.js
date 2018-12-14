@@ -29,32 +29,13 @@ export const FirstLoad = styled.div`
 export const Container = styled.div`
   display: grid;
   grid-template-rows: repeat(6, min-content);
-  grid-template-columns: min-content 1fr repeat(3, minmax(min-content, 140px)) 1fr min-content;
+  grid-template-columns: 100px min-content 100px;
+  justify-content: center;
 `
-
-// HEADER
-// export const MainHeader = styled.header`
-//   grid-column: span 6;
-//   display: flex;
-//   justify-content: space-between;
-//   margin: 50px;
-
-//   @media screen and (max-width: 500px) {
-//     margin: 40px;
-//   }
-
-//   img {
-//     width: 25px;
-
-//     @media screen and (max-width: 500px) {
-//       width: 20px;
-//     }
-//   }
-// `
 
 // HOME
 export const HomeDiv = styled.div`
-  grid-column: 4 / 5;
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
 
   h1 {
@@ -63,6 +44,7 @@ export const HomeDiv = styled.div`
     font-weight: 300;
     text-align: center;
     margin: 0;
+    padding-top: 50px;
   }
 `
 
@@ -179,7 +161,7 @@ export const SectionLink = styled.a`
 
 // ABOUT
 export const AboutSection = styled.section`
-  grid-column: 4 / 5;
+  grid-column: 2 / 3;
   grid-row: 3 / 4;
 `
 
@@ -218,30 +200,30 @@ export const AboutItem = styled.a`
 
 // PERSONAL
 export const PersonalSection = styled.section`
-  grid-column: 4 / 5;
+  grid-column: 2 / 3;
   grid-row: 4 / 5;
 `
 
 export const PersonalGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 12px;
 
   @media screen and (max-width: 500px) {
-    grid-gap: 10px;
+    display: block;
   }
 `
 
 // CONTACT
 export const ContactSection = styled.section`
-  grid-column: 4 / 5;
+  grid-column: 2 / 3;
   grid-row: 5 / 6;
 `
 
 // FOOTER
 export const FooterSection = styled.footer`
-  grid-column: 4 / 5;
+  grid-column: 2 / 3;
   grid-row: 6 / 7;
 
   span {

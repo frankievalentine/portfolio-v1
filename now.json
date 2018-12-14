@@ -1,14 +1,5 @@
 {
-    "name": "fv-portfolio",
-    "version": 2,
+    "version": 1,
     "alias": ["valentinedev.com", "www.valentinedev.com"],
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@now/static-build",
-            "config": {
-                "distDir": "public"
-            }
-        }
-    ]
+    "type": "static"
 }
