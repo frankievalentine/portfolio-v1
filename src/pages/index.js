@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import Loading from '../components/Loading'
 import { Container } from '../styles'
-// import Head from '../components/Head'
 import Home from '../components/Home'
 import About from '../components/About'
 import Personal from '../components/Personal'
@@ -33,7 +32,6 @@ export default () => (
     <GlobalStyle />
     <Loading />
       <Container>
-        {/* <Head /> */}
         <Home />
         <About />
         <Personal />

@@ -1,5 +1,13 @@
 {
-    "version": 1,
-    "alias": ["valentinedev.com", "www.valentinedev.com"],
-    "type": "static"
+    "name": "my-portfolio",
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/static-build",
+            "config": {
+                "distDir": "public"
+            }
+        }
+    ]
 }

@@ -29,8 +29,16 @@ export const FirstLoad = styled.div`
 export const Container = styled.div`
   display: grid;
   grid-template-rows: repeat(6, min-content);
-  grid-template-columns: 100px min-content 100px;
+  grid-template-columns: 1fr 700px 1fr;
   justify-content: center;
+
+  @media screen and (max-width: 775px) {
+    grid-template-columns: 1fr 400px 1fr;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr 250px 1fr;
+  }
 `
 
 // HOME
@@ -52,21 +60,6 @@ export const HomeNav = styled.nav`
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-`
-
-export const HomeImg = styled.img`
-  width: 752px;
-  height: 653px;
-
-  @media screen and (max-width: 775px) {
-    width: 450px;
-    height: 390px;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 350px;
-    height: 303px;
-  }
 `
 
 export const NavItem = styled.a`
@@ -234,6 +227,7 @@ export const FooterSection = styled.footer`
 
     @media screen and (max-width: 775px) {
       text-align: center;
+      margin: 50px;
     }
   }
 `

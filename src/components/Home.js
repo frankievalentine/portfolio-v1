@@ -1,6 +1,7 @@
 import React from 'react'
-import me from '../images/me.jpg'
-import { HomeDiv, HomeNav, NavItem, HomeImg } from '../styles'
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { HomeDiv, HomeNav, NavItem } from '../styles'
 
 const scroll = (e, section) => {
   e.preventDefault()
@@ -11,21 +12,36 @@ const scroll = (e, section) => {
 }
 
 const Home = () => (
-  <HomeDiv>
-    <h1>Frankie Valentine</h1>
-    <HomeNav>
-      <NavItem href="#about" onClick={e => scroll(e, 'about')}>
-        About
-      </NavItem>
-      <NavItem href="#work" onClick={e => scroll(e, 'work')}>
-        Work
-      </NavItem>
-      <NavItem href="#contact" onClick={e => scroll(e, 'contact')}>
-        Contact
-      </NavItem>
-    </HomeNav>
-    <HomeImg src={me} alt="Frankie Valentine portrait" />
-  </HomeDiv>
+  <StaticQuery
+    query={graphql`
+      query JumboImage {
+        file(relativePath: { eq: "me.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <HomeDiv>
+        <h1>Frankie Valentine</h1>
+        <HomeNav>
+          <NavItem href="#about" onClick={e => scroll(e, 'about')}>
+            About
+          </NavItem>
+          <NavItem href="#work" onClick={e => scroll(e, 'work')}>
+            Work
+          </NavItem>
+          <NavItem href="#contact" onClick={e => scroll(e, 'contact')}>
+            Contact
+          </NavItem>
+        </HomeNav>
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </HomeDiv>
+    )}
+  />
 )
 
 export default Home
