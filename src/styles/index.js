@@ -100,6 +100,7 @@ export const SectionH1 = styled.h1`
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-decoration: underline;
 
   @media screen and (max-width: 775px) {
     font-size: 25px;
@@ -202,6 +203,10 @@ export const PersonalGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 12px;
+
+  @media screen and (max-width: 775px) {
+    display: block;
+  }
 
   @media screen and (max-width: 500px) {
     display: block;

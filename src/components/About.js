@@ -19,7 +19,7 @@ const About = () => (
       built with efficiency in mind.
     </span>
     <AboutItem
-      href="https://v3digital.studio/work"
+      href="https://v3digital.studio/"
       alt="V3 Digital Studio Work"
       rel="noopener noreferrer"
       target="_blank"

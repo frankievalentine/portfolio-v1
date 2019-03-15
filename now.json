@@ -1,5 +1,5 @@
 {
-    "name": "my-portfolio",
+    "name": "portfolio",
     "version": 2,
     "builds": [
         {
@@ -9,5 +9,6 @@
                 "distDir": "public"
             }
         }
-    ]
+    ],
+    "alias": ["valentinedev.com", "www.valentinedev.com"]
 }
